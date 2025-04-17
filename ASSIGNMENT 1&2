@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Small Business Building</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-800 text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Small Business Building</h1>
+      <div class="space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <button onclick="toggleLogin()" class="bg-white text-blue-800 px-3 py-1 rounded hover:bg-gray-100">Login</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md relative">
+      <h2 class="text-xl font-bold text-center text-blue-700 mb-4">Login</h2>
+      <input type="text" id="username" placeholder="Username" class="w-full p-3 border rounded mb-3" />
+      <input type="password" id="password" placeholder="Password" class="w-full p-3 border rounded mb-3" />
+      <p id="loginError" class="text-red-600 hidden mb-2">Invalid username or password!</p>
+      <div class="flex justify-between">
+        <button onclick="login()" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">Login</button>
+        <button onclick="toggleLogin()" class="text-gray-600">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96" style="background-image: url('https://images.unsplash.com/photo-1590650516494-0c8e4a4d9184');">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+      <h2 class="text-white text-4xl font-bold">Quality Construction by Professionals</h2>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
+    <p class="text-lg text-gray-600">We provide top-notch construction services for residential and commercial projects. Reliable, professional, and affordable.</p>
+    <img src="https://5.imimg.com/data5/SELLER/Default/2024/10/456027630/SY/RC/HG/56548346/building-construction-services.png" alt="About Image" class="mx-auto mt-6 rounded-lg shadow-lg w-full max-w-2xl">
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-200 py-16 px-6">
+    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-10">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://media.istockphoto.com/id/1458002636/photo/construction-workers-in-building-site.jpg?s=612x612&w=0&k=20&c=DOUOvDEV2ZPzLljDwoXLE96-hW5OMb1jPEjJm6EdVGY=" class="rounded mb-4" alt="Residential Construction">
+        <h3 class="text-xl font-bold mb-2">Residential Construction</h3>
+        <p>We build modern homes with quality materials and expert labor.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" class="rounded mb-4" alt="Commercial Projects">
+        <h3 class="text-xl font-bold mb-2">Commercial Projects</h3>
+        <p>Office buildings, shops, and more—tailored for business needs.</p>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow-md">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGh6IvhGN-nWvc8cTsRYzdCtAGbVGd_N366w&s" class="rounded mb-4" alt="Renovations">
+        <h3 class="text-xl font-bold mb-2">Renovations</h3>
+        <p>Transforming old spaces into beautiful, functional areas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section class="py-16 text-center px-6">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Location</h2>
+    <p class="text-lg text-gray-600">Visit us or reach out from anywhere in Pakistan</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Lahore-1_NA_map.png" alt="Map" class="mx-auto mt-6 rounded-lg shadow-lg w-full max-w-2xl">
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-50 py-16 text-center px-6">
+    <h2 class="text-3xl font-semibold text-gray-800 mb-6">Contact Us</h2>
+    <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+      <input type="text" value="Naveed" disabled class="w-full p-3 border border-gray-300 rounded mb-4 bg-gray-100"/>
+      <input type="email" value="naveedgmail.com" class="w-full p-3 border border-gray-300 rounded mb-4" />
+      <textarea placeholder="Your Message" class="w-full p-3 border border-gray-300 rounded mb-4"></textarea>
+      <button class="w-full bg-blue-700 text-white py-3 rounded hover:bg-blue-800 transition">Send Message</button>
+    </form>
+    <div class="mt-6 text-gray-700 text-lg">
+      <p><strong>Email:</strong> naveed@gmail.com</p>
+      <p><strong>Phone:</strong> 03077339482</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white text-center p-4">
+    <p>&copy; 2025 Small Business Building | Developed by Naveed</p>
+  </footer>
+
+  <!-- Login Logic Script -->
+  <script>
+    function toggleLogin() {
+      const modal = document.getElementById("loginModal");
+      modal.classList.toggle("hidden");
+    }
+
+    function login() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const errorText = document.getElementById("loginError");
+
+      if (username === "admin" && password === "1234") {
+        toggleLogin();
+        alert("Login successful! Welcome, Naveed.");
+        errorText.classList.add("hidden");
+      } else {
+        errorText.classList.remove("hidden");
+      }
+    }
+  </script>
+
+</body>
+</html>
