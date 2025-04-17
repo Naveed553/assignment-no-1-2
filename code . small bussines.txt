@@ -1,0 +1,76 @@
+
+        <h1 class="text-3xl font-bold">Smart Building Solutions</h1>
+        <p class="text-sm mt-1">Website by Computer Science Student</p>
+      </div>
+      <div class="text-right">
+        <p class="font-semibold">Naveed</p>
+        <p>📞 0307399482</p>
+        <p>📧 rana_naveed786@example.com</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-800 to-cyan-500 text-white text-center py-16">
+    <img src="https://i.ibb.co/Qd4Wr8r/cs-student.jpg" alt="Naveed" class="profile-img mx-auto mb-4" />
+    <h2 class="text-4xl font-bold mb-2">We Build Smart Buildings for Smart Businesses</h2>
+    <p class="text-lg max-w-xl mx-auto">Innovative, tech-integrated construction services tailored for modern needs.</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 bg-white px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-blue-800 mb-4">About This Project</h3>
+      <p class="text-gray-700 text-lg">
+        This is a web system project created by a Computer Science student, demonstrating the use of HTML, Tailwind CSS, and JavaScript for designing a professional website for a smart building business.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="bg-gray-100 py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-blue-800 mb-10">Our Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Smart Office Construction</h4>
+          <p>Build smart and energy-efficient office spaces for future-ready businesses.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">Computer Lab Setup</h4>
+          <p>Modern labs with power backup, networking, and secure infrastructure.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
+          <h4 class="text-xl font-semibold mb-2 text-blue-700">IoT-Based Automation</h4>
+          <p>Install smart sensors and automation systems for better safety and control.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-white px-6" id="contact">
+    <div class="max-w-xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-blue-800 mb-6">Contact Us</h3>
+      <p class="text-gray-700 mb-6">Have a project in mind? Reach out to Naveed for professional building solutions.</p>
+      <div class="text-left bg-gray-50 p-6 rounded-lg shadow mb-6">
+        <p><strong>Name:</strong> Naveed</p>
+        <p><strong>Phone:</strong> 0307399482</p>
+        <p><strong>Email:</strong> rana_naveed786@example.com</p>
+      </div>
+      <form action="mailto:rana_naveed786@example.com" method="POST" enctype="text/plain" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded" />
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded" />
+        <textarea name="message" rows="4" placeholder="Your Message" required class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded font-semibold">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-4">
+    &copy; 2025 Smart Building Solutions | Developed by Naveed
+  </footer>
+
+</body>
+</html>
